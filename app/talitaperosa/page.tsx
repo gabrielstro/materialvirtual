@@ -4,6 +4,7 @@ import React from 'react';
 import Slider from "react-slick";
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
+import { sendGTMEvent } from '@next/third-parties/google';
 
 const LiRoundedChecked = ({ text, subtext, size } : { text: string, subtext?: string, size?: string}): JSX.Element => {
   const sizeClass = size === 'sm' ? 'md:max-w-full max-w-[15px]' : ''
@@ -53,6 +54,7 @@ const TestimonyImage = ({ fileName } : { fileName: string}): JSX.Element => {
 }
 
 const onClickCTA = () => {
+  sendGTMEvent({ event: 'clickCTA', value: 'xyz' })
   window.open('https://go.hotmart.com/G89585077S?ap=63f2', '_blank');
 }
   
