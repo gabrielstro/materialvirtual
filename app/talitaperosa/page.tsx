@@ -114,7 +114,7 @@ function LandingPage() {
         </div>
       </section>
 
-      <section className="bg-center bg-cover md:bg-[url('/lp/talitaperosa/bg03desk.webp')] bg-[url('/lp/talitaperosa/bg03mob.webp')] min-w-full md:h-[772px] h-[953px] flex">
+      <section className="bg-center bg-cover md:bg-[url('/lp/talitaperosa/bg03desk.webp')] bg-[url('/lp/talitaperosa/bg03mob.webp')] min-w-full md:h-[772px] h-[953px] flex" id="certo">
         <div className="md:w-[984px] xl:w-[1170px] p-5 w-full h-full m-auto flex flex-col md:justify-center md:pt-0 pt-12">
           <h2 className="md:text-[32px] text-[22px] md:w-2/5 w-full pb-6">Você não fará apenas mais uma dieta, você vai <span className="text-[#691817] font-bold">aprender a comer do jeito certo!</span></h2>
           <p className="md:w-2/5 w-full md:text-base text-[15px]">Nas aulas vou te falar tudo sobre o plano alimentar, jejum intermitente, como potencializar o emagrecimento, como não descontar as emoções na comida, como lidar com o doce, como lidar com o álcool e muito mais!</p>
@@ -136,7 +136,7 @@ function LandingPage() {
         </div>
       </section>
 
-      <section className="bg-center bg-cover bg-[url('/lp/talitaperosa/bg05desk.webp')] min-w-full md:h-[630px] h-[746px] flex">
+      <section className="bg-center bg-cover bg-[url('/lp/talitaperosa/bg05desk.webp')] min-w-full md:h-[630px] h-[746px] flex" id="depoimentos">
         <div className="md:w-[984px] xl:w-[1170px] w-full h-full m-auto p-5 flex flex-col">
           <h2 className="md:text-[32px] text-[22px] pt-12 pb-8 leading-10 text-center">Conheça algumas mulheres que já <span className="text-[#691817] font-bold">começaram a emagrecer:</span></h2>
           <Slider {...sliderSettings} className="md:max-w-full max-w-[315px] m-auto">  
@@ -147,7 +147,7 @@ function LandingPage() {
         </div>
       </section>
 
-      <section className="bg-center bg-cover bg-[url('/lp/talitaperosa/bg06desk.webp')] min-w-full md:h-[700px] h-[1000px] flex">
+      <section className="bg-center bg-cover bg-[url('/lp/talitaperosa/bg06desk.webp')] min-w-full md:h-[700px] h-[1000px] flex" id="cta">
         <div className="md:w-[984px] xl:w-[1170px] p-5 w-full h-full m-auto flex md:flex-row flex-col items-center justify-center">
           <div className="h-[499px] md:w-[421px] border border-[#691817] rounded-lg bg-[#F8EFE8] flex flex-col p-6 text-center text-2xl gap-5">
             <h3>Você terá acesso a todo o programa completo</h3>
@@ -168,7 +168,7 @@ function LandingPage() {
         </div>
       </section>
       
-      <section className="bg-top bg-cover md:bg-[url('/lp/talitaperosa/bg07desk.webp')] bg-[url('/lp/talitaperosa/bg07mob.webp')] min-w-full md:h-[939px] h-[1042px] flex">
+      <section className="bg-top bg-cover md:bg-[url('/lp/talitaperosa/bg07desk.webp')] bg-[url('/lp/talitaperosa/bg07mob.webp')] min-w-full md:h-[939px] h-[1042px] flex" id="talita">
         <div className="md:w-[984px] xl:w-[1170px] p-5 h-full m-auto flex md:flex-row flex-col justify-end">
           <div className="md:w-2/5 md:my-auto">
             <h2 className="md:text-[32px] text-[22px] md:mb-10 md:ml-0">Quem será <span className="text-[#691817] font-bold">sua professora?</span></h2>
