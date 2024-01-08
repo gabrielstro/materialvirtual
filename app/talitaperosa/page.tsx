@@ -54,7 +54,7 @@ const TestimonyImage = ({ fileName } : { fileName: string}): JSX.Element => {
 }
 
 const onClickCTA = () => {
-  sendGTMEvent({ event: 'clickCTA', value: 'xyz' })
+  sendGTMEvent({ event: 'conversion', value: 'clickCTA' })
   window.open('https://go.hotmart.com/G89585077S?ap=63f2', '_blank');
 }
   
