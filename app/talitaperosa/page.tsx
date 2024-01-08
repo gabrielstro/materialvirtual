@@ -54,8 +54,10 @@ const TestimonyImage = ({ fileName } : { fileName: string}): JSX.Element => {
 }
 
 const onClickCTA = () => {
-  sendGTMEvent({ event: 'conversion', value: 'clickCTA' })
-  window.open('https://go.hotmart.com/G89585077S?ap=63f2', '_blank');
+  sendGTMEvent({ event: 'clickCTA', value: 'toCTAsection' })
+  let element = document.getElementById('cta');
+  if(element) element.scrollIntoView({ behavior: "smooth", block: "start"});
+  else window.open('https://go.hotmart.com/G89585077S?ap=63f2', '_blank');
 }
   
 function LandingPage() {
@@ -154,7 +156,12 @@ function LandingPage() {
             <p className="font-bold text-[#691817]">Por apenas</p>
             <p className="text-4xl">12xR$<span className="text-7xl font-bold text-[#139624]">19,66</span></p>
             <p className="text-base">Ou à vista por: R$197,00</p>
-            <button onClick={() => onClickCTA()} className="bg-gradient-to-r from-[#620D19] to-[#B8162D] md:w-[328px] w-full text-white text-xl rounded-sm md:px-8 py-4 my-4 mx-auto">Quero minha vaga agora</button>
+            <a 
+              href="https://go.hotmart.com/G89585077S?ap=63f2"
+              target='_blank'
+              className="bg-gradient-to-r from-[#620D19] to-[#B8162D] md:w-[328px] w-full text-white text-xl rounded-sm md:px-8 py-4 my-4 mx-auto">
+                Quero minha vaga agora
+            </a>
             <p className="text-lg font-bold">Pagamento único e acesso imediato!</p>
           </div>
           <div className="h-[446px] md:w-[427px] md:rounded-r-lg rounded-b-lg bg-[#F8EFE8] flex flex-col md:pl-6 p-4 justify-center text-sm md:gap-0 gap-3">
