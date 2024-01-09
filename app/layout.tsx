@@ -4,6 +4,8 @@ import './globals.css'
 import { GoogleTagManager } from '@next/third-parties/google'
 import Hotjar from '@hotjar/browser';
 
+const sora = Sora({ subsets: ['latin'] })
+
 export const metadata: Metadata = {
   title: 'Material Virtual',
   description: 'Developed by @gabrielstro',
@@ -14,7 +16,6 @@ export default function RootLayout({
 }: {
   children: React.ReactNode
 }) {
-  const sora = Sora({ subsets: ['latin'] })
   Hotjar.init(3818201, 6);
   return (
     <html lang="en">
