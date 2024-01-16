@@ -4,7 +4,7 @@ import React from 'react';
 import Slider from "react-slick";
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
-import { sendGTMEvent } from '@next/third-parties/google';
+import { YouTubeEmbed, sendGTMEvent } from '@next/third-parties/google';
 
 const LiRoundedChecked = ({ text, subtext, size } : { text: string, subtext?: string, size?: string}): JSX.Element => {
   const sizeClass = size === 'sm' ? 'md:max-w-full max-w-[15px]' : ''
@@ -138,14 +138,18 @@ function LandingPage() {
         </div>
       </section>
 
-      <section className="bg-center bg-cover bg-[url('/lp/talitaperosa/bg05desk.webp')] min-w-full md:h-[630px] h-[746px] flex" id="depoimentos">
+      <section className="bg-center bg-cover bg-[url('/lp/talitaperosa/bg05desk.webp')] min-w-full md:h-[900px] h-[1100px] flex" id="depoimentos">
         <div className="md:w-[984px] xl:w-[1170px] w-full h-full m-auto p-5 flex flex-col">
-          <h2 className="md:text-[32px] text-[22px] pt-12 pb-8 leading-10 text-center">Conheça algumas mulheres que já <span className="text-[#691817] font-bold">começaram a emagrecer:</span></h2>
+          <h2 className="md:text-[32px] text-[22px] pt-12 pb-8 leading-10 text-center">Conheça algumas pessoas que já <span className="text-[#691817] font-bold">começaram a emagrecer:</span></h2>
           <Slider {...sliderSettings} className="md:max-w-full max-w-[315px] m-auto">  
           {['t01.png', 't02.png', 't03.png', 't04.png', 't05.png', 't06.png', 't07.png', 't08.png', 't09.png', 't10.png', 't11.png', 't12.png', 't13.png', 't14.png', 't15.webp', 't16.png', 't17.png', 't18.png', 't19.png'].map((fileName, index) => (
             <TestimonyImage fileName={fileName} key={fileName}/>
           ))}
           </Slider>
+          <YouTubeEmbed 
+            videoid="BNIHuhXuqrs" 
+            style='margin: 30px auto'
+          />
         </div>
       </section>
 
